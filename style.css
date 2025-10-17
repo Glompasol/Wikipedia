@@ -1,0 +1,163 @@
+header {
+    position: relative;
+    color: black;
+}
+
+.header-main {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.header-main label {
+    font-size: 18px;
+}
+
+.header-main input {
+    height: 30px;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.header-main button {
+    height: 30px;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+header img {
+    float: none;
+}
+
+.info-box {
+    background: white;
+    border-color: gray;
+    border-width: 1px;
+    border-style: solid;
+    padding: 10px 0;
+    text-align: center;
+    margin-right: 50px;
+}
+
+hr {
+    border-style: solid;
+    border-color: black;
+    margin: 3px 0px 10px;
+}
+
+.article p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wiki-thumb {
+    float: right;
+    width: 250px;
+
+    display: block;
+    border: none;
+}
+
+.wiki-thumb .thumbthinner {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 3px;
+    overflow: hidden;
+}
+
+.wiki-thumb h3 {
+    text-align: center;
+}
+
+.wiki .wiki-thumb img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.wiki-thumb .thumbcaption {
+    padding: 0.3em 0.5em 0.4em 0.5em;
+    font-size: 85%;
+    font-style: italic;
+    line-height: 1.4em;
+    text-align: left;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 250px 1fr 300px;
+    gap: 15px;
+}
+
+.sidebar {
+    padding: 15px;
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+
+}
+
+.left {
+    grid-column: 1;
+}
+
+.left ol {
+    list-style-type: none;
+}
+
+.main-content {
+    grid-column: 2;
+}
+
+.right {
+    grid-column: 3;
+}
+
+hr {
+    border-style: solid;
+    border-color: lightgray;
+    padding-left: 50px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.right .appearance {
+
+    padding-top: 0px;
+}
+
+nav.log {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+.comment p {
+    font-size: 15px;
+}
+
+.comment i {
+    font-size: 16px;
+    margin-left: 50px;
+}
+
