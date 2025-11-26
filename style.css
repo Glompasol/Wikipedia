@@ -6,7 +6,7 @@ header {
 .header-main {
     display: flex;
     gap: 40px;
-    align-items: center;
+    align-items: top;
 }
 
 .header-main label {
@@ -25,6 +25,8 @@ header {
     padding: 0 10px;
 }
 
+
+
 header img {
     float: none;
 }
@@ -42,17 +44,21 @@ header img {
 hr {
     border-style: solid;
     border-color: black;
-    margin: 3px 0px 10px;
+    margin: 5px 0px 5px;
+    border-style: solid;
+    border-color: lightgray;
+    padding-left: 50px;
 }
 
-.article p {
+p {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .wiki-thumb {
     float: right;
-    width: 250px;
-
+    max-width: 300px;
     display: block;
     border: none;
 }
@@ -86,7 +92,7 @@ hr {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 250px 1fr 300px;
+    grid-template-columns: 200px 1fr 250px;
     gap: 15px;
 }
 
@@ -112,12 +118,6 @@ hr {
 
 .right {
     grid-column: 3;
-}
-
-hr {
-    border-style: solid;
-    border-color: lightgray;
-    padding-left: 50px;
 }
 
 nav {
@@ -150,10 +150,11 @@ a:hover {
 h1 {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
+
 }
 
 .comment p {
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .comment i {
@@ -161,3 +162,17 @@ h1 {
     margin-left: 50px;
 }
 
+footer {
+    font-size: 11px;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-top: 20px;
+}
+
+b {
+    font-size: 0.875em;
+}

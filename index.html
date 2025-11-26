@@ -10,51 +10,98 @@
 <body>
     <header id="top">
         <div class="header-main">
-        <img src="Images/wiki-logo-2.jpg" width="200px">
-
-        <form id="search-form">
+        <nav style="align-items: center; margin-left: 45px;">
+        <a href="index.html">
+        <img src="Images/burgerIcon.png" width="25px" height="25px">
+        </a>
+        <a href="index.html">
+            <img src="Images/wiki-logo-2.jpg" width="150px">
+        </a>
+        </nav>
+        <form id="search-form"> 
             <input type="text" size="50" id="search-input" placeholder="Search Fabipedian...">
-            <button type="submit" id="search-button">Submit</button>
+            <button type="submit" id="search-button"><b>Search</b></button>
         </form>
         </div>
-        <nav class="log">
-            <a href="#">Donate</a>
-            <a href="#">Create account</a>
-            <a href="#">Log in</a>
+        <nav class="log"> <!--You may ask? Why am i not working? Well... im just to tired... i did not sleep last night...-->
+            <a href="donate.html">Donate</a>
+            <a href="log.html">Create account</a>
+            <a href="log.html">Log in</a>
         </nav>
-    </header>
-    <div class="grid-container" id="main-grid">
-        <aside class="sidebar left">
+    </header> <!--This is the end... of the header... i guess... and now... the end is near... and so i face... the final curtain... my friend... i'll say it clear... i'll state my case... of which i'm certain... i've lived a life that's full... i've traveled each and every highway... and more, much more than this... i did it my way...-->
+    <div class="grid-container" id="main-grid"> <!--Main grid... where all the magic happens... or at least where the content is...-->
+        <aside class="sidebar left"> 
             <ol>
                 <p>Contents</p>
                 <hr>
-                <a href="#top"><li>(Top)</li></a>
-                <a href="#name"><li>Name</li></a>
+                <a href="#top"><li>(Top)</li></a> <!--Shh... im pretending to work... but in reality im just writing silly comments...-->
+                <a href="#name"><li>Name</li></a> <!--This is a comment... nothing to see here... move along...-->
             </ol>
         </aside>
         <main class="main-content">
             <!-- Main content -->
             <section class="article">
-                <h1>Fabipedian</h1>
-                <hr>
                 <nav>
-                <a href="index.html">Article</a>
-                <a href="index.html">Talk</a>
+                <h1>Fabipedian</h1> <!--This is the title... nothing special... just a title...-->
+                <select style="border: none; width: 15%; background-color: transparent; font-size: 16px; cursor: pointer; margin-left: 625px; margin-top: 50px;">
+                    <option>151 languages</option>
+                    <option>Deutsch</option>
+                    <option>Español</option>
+                    <option>Français</option>
+                    <option>Italiano</option>
+                    <option>日本語</option>
+                    <option>Русский</option>
+                </select>
                 </nav>
                 <hr>
+                <nav>
+                <a href="#">Article</a>
+                <a style="margin-right: 470px;" href="#">Talk</a> <!--When i write this comment... i look like im working... but in reality im just goofing around...-->
+                <a href="#">Read</a>
+                <a href="#">View source</a>
+                <a href="#">View history</a>
+                <select id="tools" name="tools" style="border: none; width: 7%; background-color: transparent; font-size: 16px; cursor: pointer;">
+                    <option value="tools">Tools</option>
+                    <option value="whatlinkshere">What links here</option>
+                    <option value="relatedchanges">Related changes</option>
+                    <option value="uploadfile">Upload file</option>
+                    <option value="specialpages">Special pages</option>
+                    <option value="permalink">Permanent link</option>
+                    <option value="pageinfo">Page information</option>
+                    <option value="wikidataitem">Wikidata item</option>
+                </select>
+                </nav>
+                <hr> <!--Horizontal line-->
+
                 <section class="info-box">
                 <p>What is this?</p>
-                <p>Idk, dude. Its a bunch of text in a HTML document... or is it?</p>
+                <p>Idk, dude. Its a bunch of text in a HTML document... or is it?</p> <!--*I stare at the screen... pretending to work... but in reality im just writing silly comments...*-->
                 </section>
+
                 <section class="comment">
                 <p>From Fabipedian, the free HTML document</p>
                 <p><i>Ts is js a random ahh HTML document... or is it?</i></p>
                 </section>
-                <p><b>Fabipedian</b> is a HTML/CSS document made by <a href="Articles/Fabian.html">Fabian</a>. Once upon a time on the 13th. October 2025 Fabian said to himself Im gonna make a website ... here it is in all its glory... but it looks really bad... maybe im just tired... or hungry... mostly tired i did not get any sleep tonight... i stayed up playing HOI4!</p>
-                <p>This is not just a stupid website... its my entire existence...</p>
-
                 <figure class="wiki-thumb">
-                    <h3>Birb</h3>
+                    <h3>Fabipedian</h3>
+                    <div class="thumbthinner">
+                        <img src="Images/wiki-logo-2.jpg" width="100%" alt="Fabipedian logo first prototype">
+                    <figcaption class="thumbcaption">
+                        The logo of Fabiepedian, a globe made out of puzzle pieces traced in Paint.
+                    </figcaption>
+                    <p style="text-align: center;">Overview</p>
+                    <table style="width: 100%; border: 1px; border-collapse: collapse;">
+                        <tr>
+                            <td>Type of site</td>
+                            <td>Local encyclopedia</td>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td>Fabipedian</td>
+                        </tr>
+                    </table>
+                    </div>
+                    <h3>Placeholder</h3>
                     <div class="thumbthinner">
                         <img src="Images/Bird.jpg" width="100%" alt="A bird?">
                     <figcaption class="thumbcaption">
@@ -62,6 +109,8 @@
                     </figcaption>
                     </div>
                 </figure>
+                <p><b>Fabipedian</b> is a HTML/CSS document made by <a href="Articles/Fabian.html">Fabian</a>. Once upon a time on the 13th. October 2025 Fabian said to himself Im gonna make a website ... here it is in all its glory... but it looks really bad... maybe im just tired... or hungry... mostly tired i did not get any sleep tonight... i stayed up playing HOI4!</p>
+                <p>This is not just a stupid website... its my entire existence...</p>
                 <h3 id="name"><b>Name</b></h3>
                 <p>The name "Fabipedian" comes from a mix of two words "Fabian" + "Wikipedia" or "Fabi" + "pedia" + "n". The word consists of 5 words from <a href="Articles/Fabian.html">Fabian</a> and 5 words from Wikipedia giving the name a perfect 50/50 balance.</p>
                 <p>Why is it named this way? because of Copyright.</p>
@@ -74,23 +123,52 @@
             <hr>
             <p>Text</p>
             <hr>
-            <h3>
+            <h4>
             <input type="radio" id="small" name="fontsize" value="small">
             <label for="small">Small</label>
-            </h3>
-            <br>
-            <h3>
+            </h4>
+            <h4>
             <input type="radio" id="standard" name="fontsize" value="standard" checked>
             <label for="standard">Standard</label>
-            </h3>
-            <br>
-            <h3>
+            </h4>
+            <h4>
             <input type="radio" id="large" name="fontsize" value="large">
             <label for="large">Large</label>
-            </h3>
+            </h4>
+            <p>Width</p>
+            <hr>
+            <h4>
+            <input type="radio" id="thin" name="barwidth" value="thin" checked>
+            <label for="standard">Standard</label>
+            </h4>
+            <h4>
+            <input type="radio" id="wide" name="barwidth" value="wide">
+            <label for="wide">Wide</label>
+            </h4>
             </section>
         </aside>
     </div>
+    <footer>
+        <hr>
+        <p>This page was last edited on 5 August 2025, at 05:14 (UTC).</p>
+        <p>Text is available under the Creative Commons Attribution-ShareAlike 4.0 License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.</p>
+        <br>
+        <nav>
+            <a href="#">Privacy Policy</a>
+            <a href="#">About Wikipedia</a>
+            <a href="#">Contact</a>
+            <a href="#">Wikipedia</a>
+            <a href="#">Code of Conduct</a>
+            <a href="#">Developers</a>
+            <a href="#">Statistics</a>
+            <a href="#">Cookie statement</a>
+            <a href="#">Mobile view</a>
+        </nav>
+        <a href="https://www.mediawiki.org/wiki/MediaWiki">
+        <img src="Images/mediaWiki.png" width="7.5%" style="float: right;">
+        </a>
+        <br><br><br><br><br><br><br><br><br>
+    </footer>
 </body>
 <!-- ...existing code... -->
 </html>

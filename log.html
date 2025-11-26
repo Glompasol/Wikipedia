@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabipedian | Sign up</title>
+</head>
+<body>
+    <header id="top">
+        <div class="header-main">
+        <nav style="align-items: center;">
+        <img src="Images/burgerIcon.png" width="25px" height="25px">
+        <img src="Images/wiki-logo-2.jpg" width="128px" height="72px">
+        <form id="search-form"> <!--Search form... because every website needs one... even if it does not work...-->
+            <input type="text" size="50" id="search-input" placeholder="Search Fabipedian...">
+            <button type="submit" id="search-button"><b>Search</b></button>
+        </form>
+        </nav>
+        </div>
+        <nav class="log"> <!--You may ask? Why am i not working? Well... im just to tired... i did not sleep last night...-->
+            <a href="#">Donate</a>
+            <a href="#">Create account</a>
+            <a href="#">Log in</a>
+        </nav>
+    </header>
+    <section style="margin-left: 100px; margin-right: 325px;">
+    <h1>Log in</h1>
+    <hr>
+    <p style="margin-left: 95%;">Tools</p>
+    <hr>
+    </section>
+    <section style="margin-left: -155px;">
+    <div class="grid-container" id="main-grid">
+    <main class="main-content">
+        <form id="signup-form" class="signup-form">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <button type="submit">Log in</button>
+        </form>
+    </main>
+
+    <aside class="sidebar right">
+            <!-- Right sidebar content -->
+            <section class="appearance">
+            <p><b>Apparance</b></p>
+            <hr>
+            <p>Text</p>
+            <hr>
+            <h4>
+            <input type="radio" id="small" name="fontsize" value="small">
+            <label for="small">Small</label>
+            </h4>
+            <h4>
+            <input type="radio" id="standard" name="fontsize" value="standard" checked>
+            <label for="standard">Standard</label>
+            </h4>
+            <h4>
+            <input type="radio" id="large" name="fontsize" value="large">
+            <label for="large">Large</label>
+            </h4>
+            <p>Width</p>
+            <hr>
+            <h4>
+            <input type="radio" id="thin" name="barwidth" value="thin" checked>
+            <label for="standard">Standard</label>
+            </h4>
+            <h4>
+            <input type="radio" id="wide" name="barwidth" value="wide">
+            <label for="wide">Wide</label>
+            </h4>
+            </section>
+        </aside>
+        </div>
+    </section>
+</body>
+</html>
