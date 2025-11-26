@@ -1,46 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fabipedian | Sign up</title>
-</head>
-<body>
-    <header id="top">
-        <div class="header-main">
-        <nav style="align-items: center;">
-        <img src="Images/burgerIcon.png" width="25px" height="25px">
-        <img src="Images/wiki-logo-2.jpg" width="128px" height="72px">
-        <form id="search-form"> 
-            <input type="text" size="50" id="search-input" placeholder="Search Fabipedian...">
-            <button type="submit" id="search-button"><b>Search</b></button>
-        </form>
-        </nav>
-        </div>
-        <nav class="log"> 
-            <a href="#">Donate</a>
-            <a href="#">Create account</a>
-            <a href="#">Log in</a>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fabipedian | Homepage</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header id="top">
+            <div class="header-main">
+                <nav style="align-items: center; margin-left: 45px;">
+                    <a href="index.html">
+                        <img src="Images/burgerIcon.png" width="25px" height="25px" alt="menu">
+                    </a>
+                    <a href="index.html">
+                        <img src="Images/wiki-logo-2.jpg" width="150px" alt="logo">
+                    </a>
+                </nav>
+
+                <form id="search-form">
+                    <input type="text" size="50" id="search-input" placeholder="Search Fabipedian...">
+                    <button type="submit" id="search-button"><b>Search</b></button>
+                </form>
+            </div>
+
+            <nav class="log">
+                <a href="donate.html">Donate</a>
+                <a href="log.html">Create account</a>
+                <a href="log.html">Log in</a>
+            </nav>
+        </header> 
     <section style="margin-left: 100px; margin-right: 325px;">
     <h1>Log in</h1>
     <hr>
-    <p style="margin-left: 95%;">Tools</p>
+    <select id="tools" name="tools" style="border: none; background-color: transparent; font-size: 16px; cursor: pointer; margin-left: 1020px; width: 6%;">
+    <option value="tools">Tools</option>
+    <option value="bs">Article</option>
+    <option value="random bs">Article (better)</option> 
+    <!--Top the most AURA moments O.A.T-->
+    <!--Nr 1: Lupus åpner white monster med en hånd... (Ryan Gosling approved)-->
+    </select>
     <hr>
     </section>
     <section style="margin-left: -155px;">
     <div class="grid-container" id="main-grid">
     <main class="main-content">
+        <p>Login processing now uses our domain auth.fabimedia.org. If you are using blocking software, you will need to allow access to this domain to log in. (technical details)</p>
         <form id="signup-form" class="signup-form">
             <label for="username">Username:</label><br>
             <input type="text" id="username" name="username" required><br><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
             <label for="password">Password:</label><br>
             <input type="password" id="password" name="password" required><br><br>
+            <label for="checkbox">Keep me logged in (for up to one year)</label>
+            <input type="checkbox" id="checkbox" name="checkbox">
             <button type="submit">Log in</button>
         </form>
     </main>
