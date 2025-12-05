@@ -174,3 +174,10 @@ footer {
 b {
     font-size: 0.875em;
 }
+
+canvas {
+    background: #70c5ce;
+    display: block;
+    margin: 0 auto;
+}
+
