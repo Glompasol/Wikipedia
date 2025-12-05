@@ -1,5 +1,7 @@
 const canvas = document.getElementById("canvas");
 
+const score = document.getElementById("score");
+
 const ctx = canvas.getContext("2d")
 
 let birdX = 80;
@@ -7,6 +9,11 @@ let birdY = 250;
 let velocity = 0;
 let gravity = 0.5;
 let jump = -8;
+
+let clicked = false;
+
+let Score = 0
+let HighScore = 0
 
 let pipes = [];
 let pipegap = 140;
@@ -34,6 +41,8 @@ function update() {
         if (p.x + pipeWidth < 0) {
             pipes.shift();
             pipes.push(createPipe());
+            Score += 1
+            score.textContent = "Score: "+Score
         }
 
         if (birdX + 20 > p.x && birdX < p.x + pipeWidth && (birdY < p.top || birdY + 20 > p.bottom)) {
@@ -46,6 +55,7 @@ function update() {
     }
 
     draw();
+
     requestAnimationFrame(update);
 }
 
@@ -62,8 +72,13 @@ function draw() {
     }
 }
 
-document.addEventListener("click", () => {    velocity = jump;
+document.addEventListener("click", () => {    
+    velocity = jump;
+    if (clicked === false) {
+        update();
+        clicked = true;
+    }
 // All i know is that... i know nothing... - Kanye West
 });
 
-update();
+ctx.fillText('Click to start game', canvas.width / 2, canvas.height / 2);
