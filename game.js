@@ -20,6 +20,10 @@ let pipegap = 140;
 let pipeWidth = 60;
 let pipeSpeed = 2;
 
+let up_rect = false
+
+
+
 pipes.push(createPipe());
 
 function createPipe() {
@@ -46,12 +50,18 @@ function update() {
         }
 
         if (birdX + 20 > p.x && birdX < p.x + pipeWidth && (birdY < p.top || birdY + 20 > p.bottom)) {
-            location.reload();
+            //ctx.fillStyle = "black";
+            //ctx.fillText('Game over. Start siden på nytt for å spille igjen', canvas.width / 10, canvas.height / 2);
+            location.reload()
+            return;
         }
     }
 
-    if (birdY > canvas.height || birdY < 0) {
-        location.reload();
+if (birdY > canvas.height || birdY < 0) {
+        //ctx.fillStyle = "black";
+        //ctx.fillText('Game over. Start siden på nytt for å spille igjen', canvas.width / 10, canvas.height / 2);
+        location.reload()
+        return;
     }
 
     draw();
@@ -81,4 +91,6 @@ document.addEventListener("click", () => {
 // All i know is that... i know nothing... - Kanye West
 });
 
-ctx.fillText('Click to start game', canvas.width / 2, canvas.height / 2);
+ctx.fillText('Klikk for å starte spill', canvas.width / 2, canvas.height / 2);
+
+

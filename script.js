@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!articleContent) return;
         switch (value) {
             case 'small':
-                articleContent.style.fontSize = '12px';
+                articleContent.style.fontSize = '8px';
                 break;
             case 'standard':
-                articleContent.style.fontSize = '16pxem';
+                articleContent.style.fontSize = '16px';
                 break;
             case 'large':
                 articleContent.style.fontSize = '22px';
