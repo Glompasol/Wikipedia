@@ -82,15 +82,17 @@ function draw() {
     }
 }
 
-document.addEventListener("click", () => {    
+document.addEventListener("keydown", (e) => {
+  if (e.code === "KeyW") {   
     velocity = jump;
     if (clicked === false) {
         update();
         clicked = true;
     }
+  }
 // All i know is that... i know nothing... - Kanye West
 });
 
-ctx.fillText('Klikk for å starte spill', canvas.width / 2, canvas.height / 2);
+ctx.fillText('Trykk W for å starte spill', canvas.width / 2, canvas.height / 2);
 
 
